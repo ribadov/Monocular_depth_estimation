@@ -1,0 +1,14 @@
+\begin{table}[t]
+    \centering
+    \caption{Quantitative comparison of the three trained models. Lower is better for all accuracy metrics. Runtime is measured on the same hardware.}
+    \label{tab:main_results}
+    \begin{tabular}{lcccccc}
+        \hline
+        Model & Val. Loss & RMSE & SI-RMSE & AbsRel & Sec./Epoch & Hours \\
+        \hline
+        SmallUNet & 0.9085 & 0.1277 & 0.9153 & 4.0034 & 50.5 & 1.40 \\
+        MediumUNet & 0.3852 & 0.0589 & 0.5909 & 3.6000 & 188.3 & 5.23 \\
+        DepthModelWithCues & \textbf{0.3008} & \textbf{0.0554} & \textbf{0.5364} & \textbf{3.2875} & 242.3 & 6.73 \\
+        \hline
+    \end{tabular}
+\end{table}
